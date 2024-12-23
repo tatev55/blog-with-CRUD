@@ -58,7 +58,11 @@ if (postId) {
                     img: document.querySelector('.input-url').value,
                     authorName: document.querySelector('.input-authorName').value
                 };
-                updatePost(postId, updatedPostData);
+
+                setTimeout(()=>{
+                    updatePost(postId, updatedPostData);
+                })
+                
             });
         }
     });

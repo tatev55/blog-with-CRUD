@@ -126,7 +126,7 @@ function loadPosts() {
 }
   
 function loadBloggers() {
-     return fetchFromApi('/users');
+     return fetchFromApi('/api/users');
 }
 
 

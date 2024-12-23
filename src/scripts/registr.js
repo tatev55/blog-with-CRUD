@@ -52,6 +52,7 @@ document.getElementById('formBox__register').addEventListener('submit', (event)=
     createNewBlog( lastName, firstName, email, userName, password);
     setTimeout(() =>{
         window.location.href = 'home.html'
+        
     }, 1000)
     
 })
