@@ -52,7 +52,7 @@ document.getElementById('formBox__register').addEventListener('submit', (event)=
     createNewBlog( lastName, firstName, email, userName, password);
     setTimeout(() =>{
         window.location.href = 'home.html'
-        
+       
     }, 1000)
     
 })
@@ -70,11 +70,11 @@ function createNewBlog( lastName, firstName, email, userName, password) {
     };
 
         return new Api('https://simple-blog-api-red.vercel.app')
-            .post('/auth/register', blogData )
+            .post('/api/auth/register', blogData )
             .then(blogger => {
+                console.log(blogger);
                 
-               return blogger
-                
+               return blogger   
             })
             .catch(error =>{
                 console.error('Error creating post:', error) ;
